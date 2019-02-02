@@ -1,0 +1,46 @@
+﻿@page
+@model APPdev.pages.ws1Model
+@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ws1</title>
+</head>
+<body>
+    <h1>Teams of the six nations</h1>
+
+    @{
+        string[] MyTestArray = {"England","Ireland","Scotland",
+" Wales","Italy", "France"};
+
+<ul>
+
+    @foreach (string country in MyTestArray)
+    {
+        <li>@country</li>
+    }
+</ul>
+
+    }
+
+    <form method="post">
+
+        <label>
+            Enter you name <input type="text" name="name" />
+
+            <button type="submit">Press here</button>
+        </label>
+
+
+    </form>
+    <h2>@Model.message</h2>
+
+
+</body>
+</html>
