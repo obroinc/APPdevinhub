@@ -12,16 +12,12 @@ namespace APPdev.pages
     {
         public string message { get; set; }
 
-        public string[] MyTestArray { get; set; } = { "Ireland", "Scotland", "Wales", "England" };
+       
 
 
         public void OnGet()
         {
 
-         message=(foreach (string country in MyTestArray) ;
-    {
-        < li > country </ li >
-    })
 
         }
         public void OnPost(string name)
