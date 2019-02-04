@@ -1,0 +1,54 @@
+﻿@page
+@model APPdev.pages.WB1bModel
+@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WB1b</title>
+</head>
+<body>
+    <h3>Task 3:To add to numbers and output their sum</h3>
+    <form method="post">
+
+        <label asp-for=Number1>
+            Enter number 1 <input asp-for=Number1    type="number" name="Number1" value=@Model.Number1 />
+
+        </label>
+        <label asp-for=Number2>
+            Enter number 2<input asp-for=Number2 type="number" name="Number2" value=@Model.Number2 />
+
+            <button type="submit">Press here to add the numbers</button>
+        </label>
+
+    </form>
+
+    <form>
+        <label for="01">
+            <input type="radio" id="01" value="add" name="operation" />Add
+        </label>
+
+        <label for="02">
+            <input type="radio" id="02" value="subtract" name="operation" />Subtract
+        </label>
+
+        <label for="03">
+            <input type="radio" id="03" value="multiply" name="operation" />Multiply
+        </label>
+
+        <label for="04">
+            <input type="radio" id="04" value="divide" name="operation" />Divide
+        </label>
+
+
+    </form>
+
+    <h2>@Model.Message</h2>
+
+</body>
+</html>

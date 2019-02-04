@@ -12,12 +12,12 @@ namespace APPdev.pages
     {
         public string message { get; set; }
 
-       
+        public string[] MyTestArray { get; set; } = { "Ireland", "Wales", "Scotland" };
 
 
         public void OnGet()
         {
-
+            //string[] MyTestArray;
 
         }
         public void OnPost(string name)

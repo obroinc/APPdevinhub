@@ -15,23 +15,23 @@
 
 <body>
     <h1>Teams of the six nations</h1>
-    
+    @*
+   
     @{
-        string[] MyTestArray = {"England","Ireland","Scotland",
-" Wales","Italy", "France"};
+        
 
 <ul>
 
-    @foreach (string country in MyTestArray)
+    @foreach (string country in @Model.MytestArray)
     {
         <li>@country</li>
     }
 </ul>
 
         }
-    <p>Using the model page</p>
+   
 
-
+*@
 
     <form method="post">
 
