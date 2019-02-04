@@ -13,54 +13,36 @@
     <title>taghelpplay</title>
 </head>
 <body>
-    @*
-        <form method="post">
-            <label asp-for=Number></label>
-            <input asp-for=Number />
 
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <h1>@Model.Message</h1>
-    *@
-    <br />
-
-
-
-    @*
-        <form method="post">
-            <label asp-for=IsContactAllowed></label>
-            <input asp-for=IsContactAllowed />
-
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <h1>@Model.Message</h1>
-    *@
-
-    <form>
+    <form method="post">
         <fieldset>
-            <legend>
-                <label for="Winter">
-                    <input value="Submit" id="Winter" type="radio" asp-for="Season">Winter
-                </label>
+            <legend>Seasons </legend>
+            <label for="Winter">
+                <input value="Winter" id="Winter" type="radio" asp-for="Season">Winter
+            </label>
+            <br />
+            <label for="Summer">
+                <input value="Summer" id="Summer" type="radio" asp-for="Season">Summer
+            </label>
+            <br />
+            <label for="Spring">
+                <input value="Spring" id="Spring" type="radio" asp-for="Season">Spring
+            </label>
+            <br />
+            <label for="Autumn">
+                <input value="Autumn" id="Autumn" type="radio" asp-for="Season">Autumn
+            </label>
 
-                <label for="Summer">
-                    <input value="Submit" id="Summer" type="radio"   asp-for="Season">Summer
-                </label>
-
-                <label for="Spring">
-                    <input value="submit" id="Spring" type="radio" asp-for="Season">Spring
-                </label>
-                <label for="Autumn">
-                    <input value="submit" id="Autumn" type="radio" asp-for="Season">Autumn
-                </label>
-            </legend>
         </fieldset>
+
+        <button type="submit">Please click</button>
+        <p>@Model.Message</p>
     </form>
-    <h1>@Model.Message</h1>
+    <p>@Model.Message</p>
+
+
+
+
 
 </body>
 </html>
